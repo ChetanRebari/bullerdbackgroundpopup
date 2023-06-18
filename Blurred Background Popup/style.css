@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    background: url("https://images.unsplash.com/photo-1560762484-813fc97650a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    transition: filter 0.7s;
+    
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 4px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+.btn {
+    width: 200px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+
+}
+
+.btn:hover {
+    filter: brightness(0.8);
+}
+
+.popup-container {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: url("https://media.istockphoto.com/id/476519406/photo/computer-keyboard-with-different-keys.jpg?s=612x612&w=0&k=20&c=Y1FHlycZV86vMXgLXeRyLwGmNzUiG2jw2nvIwk1ZnNo=");
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.9);
+    opacity: 1;
+  
+    
+
+}
+h4{
+    font-size: 30px;
+    margin: 10px 0;
+    font-family: sans-serif;
+    color: rgb(216, 59, 156);
+}
+label{
+    color:rgb(7, 7, 7);
+    font-family: sans-serif;
+    font-size: 20px;
+
+}
+.popup-btn{
+    background-color: orangered;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    font-size: 20px;
+}
+input{
+    padding: 10px;
+    border: 2px solid;
+    margin: 10px 0;
+    font-size: 20px;
+    text-align: center;
+}
+input::placeholder{
+    color: lightgray;
+}
+.close-icon{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.close-icon:hover{
+    color: red;  
+}
+.active.popup-container{
+    visibility: hidden;
+    /* opacity: 1; */
+    
+    top:10%;
+}
+.active.container{
+    filter: blur(10px);
+}
